@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1E3A8A">
+  <title>Mente en Marcha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icon-192.png">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🧠 Mente en Marcha</h1>
+      <p class="subtitulo">De la lectura a la acción</p>
+    </header>
+
+    <nav>
+      <button id="btnInicio" class="nav-btn activo">📖 Inicio</button>
+      <button id="btnLibro" class="nav-btn">✅ Mi libro</button>
+      <button id="btnTimer" class="nav-btn">⏱️ Acción</button>
+      <button id="btnDiario" class="nav-btn">📝 Diario</button>
+      <button id="btnProgreso" class="nav-btn">📊 Progreso</button>
+    </nav>
+
+    <main id="contenido">
+      <!-- Aquí se carga dinámicamente cada pantalla -->
+    </main>
+
+    <footer>
+      <small>⚡ Offline total · Datos locales · <button id="btnExportar" class="exportar-boton">📤 Exportar progreso</button></small>
+    </footer>
+  </div>
+
+  <script src="libros/tracy-emprende.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('✅ Service Worker listo'))
+        .catch(err => console.log('❌ SW error:', err));
+    }
+  </script>
+</body>
+</html>
