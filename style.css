@@ -1,3 +1,70 @@
+/* === ESTILOS PARA MODO AUDIBLE === */
+.audible-card {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FFFBEB 100%);
+  border-left: 5px solid #F59E0B;
+}
+
+.boton-audible {
+  background: #F59E0B;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.25rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.boton-audible:hover {
+  background: #D97706;
+  transform: scale(1.02);
+}
+
+.boton-audible.detener {
+  background: #6B7280;
+}
+
+.boton-audible.detener:hover {
+  background: #4B5563;
+}
+
+.estado-audio {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #D97706;
+  font-weight: 500;
+}
+
+/* === LISTA DE IDEAS === */
+.lista-ideas {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-ideas li {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background: #F9FAFB;
+  border-radius: 0.75rem;
+  line-height: 1.4;
+}
+
+/* === BENEFICIOS === */
+.beneficio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background: #EFF6FF;
+  border-radius: 0.75rem;
+}
+
+.beneficio-item span:first-child {
+  font-size: 1.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
