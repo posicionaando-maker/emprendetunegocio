@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #F3F4F6;
+  color: #1F2937;
+  padding-bottom: 2rem;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+header {
+  background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #6B7280;
+}
+
+.nav-btn.activo {
+  background: #3B82F6;
+  color: white;
+}
+
+main {
+  padding: 1.5rem;
+  min-height: 65vh;
+}
+
+/* Tarjetas y listas */
+.card {
+  background: #F9FAFB;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #E5E7EB;
+}
+
+.paso-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.paso-item:last-child {
+  border-bottom: none;
+}
+
+.paso-check {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.paso-texto {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.paso-texto.completado {
+  text-decoration: line-through;
+  color: #9CA3AF;
+}
+
+/* Temporizador */
+.timer {
+  text-align: center;
+  background: #1E3A8A;
+  color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 1rem 0;
+}
+
+.timer-numero {
+  font-size: 3rem;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.boton-grande {
+  background: #F59E0B;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* Diario */
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid #D1D5DB;
+  font-family: inherit;
+  font-size: 1rem;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.pregunta-diario {
+  background: #EFF6FF;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  color: #1E40AF;
+}
+
+/* Progreso */
+.barra-progreso {
+  background: #E5E7EB;
+  border-radius: 1rem;
+  height: 1.5rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.barra-lleno {
+  background: #10B981;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.racha {
+  font-size: 1.5rem;
+  text-align: center;
+  background: #FEF3C7;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #92400E;
+}
+
+.exportar-boton {
+  background: none;
+  border: none;
+  color: #3B82F6;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
+  color: #6B7280;
+  border-top: 1px solid #E5E7EB;
+}
